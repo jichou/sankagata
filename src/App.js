@@ -70,6 +70,8 @@ const App = () => {
     let incRate = isBravoWin
       ? (2000+(Math.floor((alphaRateTotal-bravoRateTotal)/25)))
       : (2000+(Math.floor((bravoRateTotal-alphaRateTotal)/25)));
+
+    incRate = incRate < 100 ? 100 : incRate;
     
     let alphaIncRate = isBravoWin
       ? incRate * -1
