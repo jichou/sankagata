@@ -89,7 +89,7 @@ const App = () => {
     setResultAlphaPlayers(alphaPlayersInfo);
     
     let bravoPlayersInfo = [];
-    alphaPlayers.forEach(((x) => {
+    bravoPlayers.forEach(((x) => {
       let newData = Object.assign({}, x);
       let newRate = newData.rate;
       newData.rate = ((newRate*100)+bravoIncRate)/100;
